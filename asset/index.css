@@ -1,0 +1,261 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  margin: 0;
+  max-width: 600px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "shrikhand", cursive;
+  font-size: 0.9em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  -webkit-box-shadow: 0px 0px 7px 3px black;
+          box-shadow: 0px 0px 7px 3px black;
+  height: 63px;
+}
+
+.Localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eaeaea;
+  opacity: .9;
+  height: 50px;
+  color: black;
+  font-weight: bold;
+}
+
+.Localisation .fas {
+  color: #353535;
+  margin-left: -20px;
+  margin-right: 20px;
+}
+
+.decouverte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-bottom: 57px;
+}
+
+.decouverte .decouverte_button {
+  width: 70%;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(356deg, #9356DC, #FF79DA);
+  color: white;
+  border: none;
+  font-size: 0.85em;
+}
+
+.fonctionnement {
+  padding: 20px;
+}
+
+.fonctionnement .fonctionnement_list {
+  width: auto;
+  list-style: none;
+  padding-left: 12px;
+}
+
+.fonctionnement .fonctionnement_list_item {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 3px 5px 3px #eaeaea;
+          box-shadow: 0px 3px 5px 3px #eaeaea;
+  background-color: #f6f6f6;
+  height: 73px;
+  margin-bottom: 24px;
+}
+
+.fonctionnement .fonctionnement_list_item .fonctionnement_list_item_numero {
+  position: absolute;
+  top: 24px;
+  left: -12px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 0.7em;
+  color: white;
+}
+
+.fonctionnement .fonctionnement_list_item .fonctionnement_list_item_logo {
+  position: absolute;
+  top: 24px;
+  left: 34px;
+  opacity: 0.5;
+}
+
+.fonctionnement .fonctionnement_list_item .fonctionnement_list_item_texte {
+  position: absolute;
+  top: 2px;
+  left: 80px;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.restaurant {
+  padding: 20px;
+}
+
+.restaurant .restaurant_list {
+  list-style: none;
+  padding: 0;
+}
+
+.restaurant .restaurant_carte {
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  height: 252px;
+  display: block;
+  margin: 0 0 20px 0;
+  -webkit-box-shadow: 0px 3px 5px 3px #eaeaea;
+          box-shadow: 0px 3px 5px 3px #eaeaea;
+  border-radius: 20px;
+}
+
+.restaurant .restaurant_image {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  height: 174px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restaurant .isNouveau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #008766;
+  background-color: #99e2d0;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.restaurant .notNouveau {
+  display: none;
+}
+
+.restaurant .restaurant_jaime {
+  position: absolute;
+  bottom: 36px;
+  right: 22px;
+}
+
+.restaurant .restaurant_nom {
+  margin: 0;
+  padding: 10px 0 5px 20px;
+}
+
+.restaurant .restaurant_description {
+  margin: 0;
+  padding: 5px 0 10px 20px;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px;
+}
+
+.footer .footer_title {
+  font-size: 1em;
+  font-weight: 100;
+  margin: 0;
+  font-family: "shrikhand";
+}
+
+.footer .footer_liste {
+  padding: 0;
+  list-style: none;
+  font-size: 0.7em;
+  line-height: 1.5em;
+}
+
+.footer .footer_lien {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .footer_logo {
+  margin-right: 10px;
+  width: 14px;
+}
+/*# sourceMappingURL=index.css.map */

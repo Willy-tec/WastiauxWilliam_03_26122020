@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  font-family: "shrikhand", cursive;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+header:hover {
+  color: #666;
+}

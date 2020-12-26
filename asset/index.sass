@@ -1,0 +1,179 @@
+$couleur_localisation: #eaeaea
+$couleur_fond_clair: #f6f6f6
+$couleur_fonctionnement_list_item: #f6f6f6
+$couleur_font_nouveau: #008766
+$couleur_background_nouveau: #99e2d0
+$couleur_footer: #353535
+$logo_local: #353535
+$primary: #9356DC
+$secondary: #FF79DA 
+$tertiary: #99E2D0
+$font-title: 'shrikhand'
+$font-normal-text: 'Roboto'
+
+html
+    line-height: 1.15
+    -webkit-text-size-adjust: 100%
+    width: 100%
+    font-family: $font-normal-text, sans-serif
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+body
+    margin: 0
+    max-width: 600px
+h1
+    margin: 0
+.header
+    display: flex
+    font-family: $font-title, cursive
+    font-size: 0.9em
+    justify-content: center
+    align-items: center
+    color: #000
+    box-shadow: 0px 0px 7px 3px black
+    height: 63px
+
+
+.Localisation
+    display: flex
+    z-index: -1
+    justify-content: center
+    align-items: center
+    background-color: $couleur_localisation
+    opacity: .9
+    height: 50px
+    color: black
+    font-weight: bold
+    .fas
+        color: $logo_local
+        margin-left: -20px
+        margin-right: 20px
+
+.decouverte
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    text-align: center
+    background-color: $couleur_fond_clair
+    padding-bottom: 57px
+    .decouverte_button
+        width: 70%
+        height: 50px
+        border-radius: 25px
+        background: linear-gradient( 356deg, $primary, $secondary)
+        color: white
+        border: none
+        font-size: 0.85em
+
+.fonctionnement
+    padding: 20px
+    .fonctionnement_list
+        width: auto
+        list-style: none
+        padding-left: 12px
+    .fonctionnement_list_item
+        position: relative
+        width: 100%
+        border-radius: 20px
+        box-shadow: 0px 3px 5px 3px #eaeaea
+        background-color: $couleur_fonctionnement_list_item
+        height: 73px
+        margin-bottom: 24px
+        .fonctionnement_list_item_numero
+            position: absolute
+            top: 24px
+            left: -12px
+            border-radius: 50%
+            background-color: $primary
+            width: 24px
+            height: 24px
+            display: flex
+            justify-content: center
+            align-items: center
+            text-align: center
+            font-size: 0.7em
+            color: white
+        .fonctionnement_list_item_logo
+            position: absolute
+            top: 24px
+            left: 34px
+            opacity: 0.5
+        .fonctionnement_list_item_texte
+            position: absolute
+            top: 2px
+            left: 80px
+            font-weight: bold
+            opacity: 0.9
+
+.restaurant
+    padding: 20px
+    background-color: 
+    .restaurant_list
+        list-style: none
+        padding: 0
+    .restaurant_carte
+        width: 100%
+        position: relative
+        text-decoration: none
+        color: black
+        height: 252px
+        display: block
+        margin: 0 0 20px 0
+        box-shadow: 0px 3px 5px 3px #eaeaea
+        border-radius: 20px
+    .restaurant_image
+        width: 100%
+        border-radius: 12px 12px 0 0
+        height: 174px
+        object-fit: cover
+    .isNouveau
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        top: 10px
+        right: 10px
+        color: $couleur_font_nouveau
+        background-color: $couleur_background_nouveau
+        width: 80px
+        height: 30px
+        border-radius: 5px
+        font-size: 0.9em
+    .notNouveau
+        display: none
+    .restaurant_jaime
+        position: absolute
+        bottom: 36px
+        right: 22px
+    .restaurant_nom
+        margin: 0
+        padding: 10px 0 5px 20px
+    .restaurant_description
+        margin: 0
+        padding: 5px 0 10px 20px
+
+.footer
+    background-color: $couleur_footer
+    color: white
+    padding: 20px
+    .footer_title
+        font-size: 1em
+        font-weight: 100
+        margin: 0
+        font-family: $font-title
+    .footer_liste
+        padding: 0
+        list-style: none
+        font-size: 0.7em
+        line-height: 1.5em
+    .footer_lien
+        text-decoration: none
+        color: white
+    .footer_logo
+        margin-right: 10px
+        width: 14px
