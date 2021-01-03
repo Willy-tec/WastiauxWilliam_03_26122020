@@ -22,8 +22,8 @@
         <main>
             <div class="localisation"><i class="fas fa-map-marker-alt"></i><div class="lieu">Paris, Belleville</div></div>
             <section class="decouverte">
-                <h2>Réservez le menu qui vous convient</h2>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                <h2 class="decouverte_titre">Réservez le menu qui vous convient</h2>
+                <p class="decouverte_texte">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
                 <input type="button" class="decouverte_button" value="Explorez nos restaurants">
             </section>
             <section class="fonctionnement">
@@ -38,18 +38,22 @@
                 <h3 class="restaurant_title">Restaurant</h3>
                 <ul class="restaurant_list">
                     <li>
-                        <a href="#" class="restaurant_carte">
+                        <a href="/asset/html/laPaletteDuGout.html" class="restaurant_carte">
                                 <img class="restaurant_image" src="/asset/images/restaurants/palleteDuGout.jpg" alt="Photo illustrant un plat">
                                 <div class="isNouveau">
                                     Nouveau
                                 </div>
                                 <h4 class="restaurant_nom">La palette du goût</h4>
                                 <p class="restaurant_description">Ménilmontant</p>
-                                <i class="restaurant_jaime far fa-heart"></i>
+                                <div class="restaurant_jaime">
+                                    <i class="far fa-heart restaurant_jaime--empty" aria-hidden="true">
+                                        <i class="fas fa-heart restaurant_jaime--full" aria-hidden="true"></i>
+                                    </i>
+                                </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="restaurant_carte">
+                        <a href="/asset/html/lanoteEnchante.html" class="restaurant_carte">
                                 <img class="restaurant_image" src="/asset/images/restaurants/noteEnchanté.jpg" alt="Photo illustrant un plat">
                                 <div class="isNouveau">
                                     Nouveau
@@ -60,7 +64,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="restaurant_carte">
+                        <a href="/asset/html/alafrancaise.html" class="restaurant_carte">
                                 <img class="restaurant_image" src="/asset/images/restaurants/laFrancaise.jpg" alt="Photo illustrant un plat">
                                 <div class="notNouveau">
                                     Nouveau
@@ -71,7 +75,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="restaurant_carte">
+                        <a href="/asset/html/leDeliceDesSens.html" class="restaurant_carte">
                                 <img class="restaurant_image" src="/asset/images/restaurants/délisceDesSens.jpg" alt="Photo illustrant un plat">
                                 <div class="notNouveau">
                                     Nouveau

@@ -18,14 +18,16 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 62.5%;
 }
 
 body {
   margin: 0;
-  max-width: 600px;
+  max-width: 60rem;
+  width: 100%;
 }
 
-h1 {
+h1, p {
   margin: 0;
 }
 
@@ -34,7 +36,7 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   font-family: "shrikhand", cursive;
-  font-size: 0.9em;
+  font-size: 1.2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -42,9 +44,9 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   color: #000;
-  -webkit-box-shadow: 0px 0px 7px 3px black;
-          box-shadow: 0px 0px 7px 3px black;
-  height: 63px;
+  -webkit-box-shadow: 0rem 0rem .7rem .3rem black;
+          box-shadow: 0rem 0rem .7rem .3rem black;
+  height: 6.3rem;
 }
 
 .Localisation {
@@ -60,15 +62,16 @@ h1 {
           align-items: center;
   background-color: #eaeaea;
   opacity: .9;
-  height: 50px;
+  height: 5rem;
+  font-size: 1.6rem;
   color: black;
   font-weight: bold;
 }
 
 .Localisation .fas {
   color: #353535;
-  margin-left: -20px;
-  margin-right: 20px;
+  margin-left: -2rem;
+  margin-right: 2rem;
 }
 
 .decouverte {
@@ -87,48 +90,76 @@ h1 {
           flex-direction: column;
   text-align: center;
   background-color: #f6f6f6;
-  padding-bottom: 57px;
+  padding-bottom: 5.7rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2.4rem;
 }
 
-.decouverte .decouverte_button {
+.decouverte_titre {
   width: 70%;
-  height: 50px;
-  border-radius: 25px;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 4.4rem 0 2rem 0;
+}
+
+.decouverte_texte {
+  width: 80%;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+
+.decouverte_button {
+  width: 70%;
+  height: 5rem;
+  border-radius: 2.5rem;
   background: linear-gradient(356deg, #9356DC, #FF79DA);
   color: white;
   border: none;
-  font-size: 0.85em;
+  font-size: 1.6rem;
 }
 
 .fonctionnement {
-  padding: 20px;
+  padding: 2rem 2rem 4.4rem 2rem;
+  font-size: 2rem;
 }
 
-.fonctionnement .fonctionnement_list {
+.fonctionnement_list {
   width: auto;
   list-style: none;
-  padding-left: 12px;
+  padding-left: 1.2rem;
 }
 
-.fonctionnement .fonctionnement_list_item {
+.fonctionnement_list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   width: 100%;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 3px 5px 3px #eaeaea;
-          box-shadow: 0px 3px 5px 3px #eaeaea;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 .3rem .5rem .3rem #eaeaea;
+          box-shadow: 0 .3rem .5rem .3rem #eaeaea;
   background-color: #f6f6f6;
-  height: 73px;
-  margin-bottom: 24px;
+  height: 7.3rem;
+  margin-bottom: 2.4rem;
 }
 
-.fonctionnement .fonctionnement_list_item .fonctionnement_list_item_numero {
+.fonctionnement_list_item_numero {
   position: absolute;
-  top: 24px;
-  left: -12px;
+  top: 2.4rem;
+  left: -1.2rem;
   border-radius: 50%;
   background-color: #9356DC;
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,51 +170,56 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-size: 0.7em;
+  font-size: 1.2rem;
   color: white;
 }
 
-.fonctionnement .fonctionnement_list_item .fonctionnement_list_item_logo {
+.fonctionnement_list_item_logo {
   position: absolute;
-  top: 24px;
-  left: 34px;
-  opacity: 0.5;
+  top: 2.6rem;
+  left: 3.4rem;
+  opacity: 1;
+  color: #9356DC;
 }
 
-.fonctionnement .fonctionnement_list_item .fonctionnement_list_item_texte {
+.fonctionnement_list_item_texte {
   position: absolute;
-  top: 2px;
-  left: 80px;
+  left: 8rem;
   font-weight: bold;
   opacity: 0.9;
+  font-size: 1.6rem;
 }
 
 .restaurant {
-  padding: 20px;
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: #f6f6f6;
 }
 
-.restaurant .restaurant_list {
+.restaurant_list {
   list-style: none;
   padding: 0;
 }
 
-.restaurant .restaurant_carte {
+.restaurant_carte {
   width: 100%;
   position: relative;
   text-decoration: none;
   color: black;
-  height: 252px;
+  height: 25.2rem;
   display: block;
-  margin: 0 0 20px 0;
-  -webkit-box-shadow: 0px 3px 5px 3px #eaeaea;
-          box-shadow: 0px 3px 5px 3px #eaeaea;
-  border-radius: 20px;
+  margin: 0 0 1.8rem 0;
+  -webkit-box-shadow: 0 .3rem .5rem .3rem #eaeaea;
+          box-shadow: 0 .3rem .5rem .3rem #eaeaea;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  background-color: white;
 }
 
-.restaurant .restaurant_image {
+.restaurant_image {
   width: 100%;
-  border-radius: 12px 12px 0 0;
-  height: 174px;
+  border-radius: 1.2rem 1.2rem 0 0;
+  height: 17.4rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -199,63 +235,98 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 1rem;
+  right: 1rem;
   color: #008766;
   background-color: #99e2d0;
-  width: 80px;
-  height: 30px;
-  border-radius: 5px;
-  font-size: 0.9em;
+  width: 8rem;
+  height: 3rem;
+  border-radius: .5rem;
+  font-size: 1.4rem;
 }
 
 .restaurant .notNouveau {
   display: none;
 }
 
-.restaurant .restaurant_jaime {
+.restaurant_jaime {
   position: absolute;
-  bottom: 36px;
-  right: 22px;
+  bottom: 3.6rem;
+  right: 2.2rem;
 }
 
-.restaurant .restaurant_nom {
-  margin: 0;
-  padding: 10px 0 5px 20px;
+.restaurant_jaime:link {
+  pointer-events: none;
 }
 
-.restaurant .restaurant_description {
+.restaurant_jaime--full {
+  position: absolute;
+  top: 3.6rem;
+  left: 2.2rem;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 150ms 50ms ease-in-out;
+  transition: -webkit-transform 150ms 50ms ease-in-out;
+  transition: transform 150ms 50ms ease-in-out;
+  transition: transform 150ms 50ms ease-in-out, -webkit-transform 150ms 50ms ease-in-out;
+  z-index: 1;
+}
+
+.restaurant_jaime:hover {
+  background: linear-gradient(220deg, #9356DC, #FF79DA);
+}
+
+.restaurant_jaime:hover--full {
+  background-color: #fff;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  mix-blend-mode: lighten;
+}
+
+.restaurant_jaime:hover--empty {
+  opacity: 1;
+}
+
+.restaurant_nom {
   margin: 0;
-  padding: 5px 0 10px 20px;
+  padding: 1.8rem 0 0rem 2rem;
+}
+
+.restaurant_description {
+  margin: 0;
+  padding: .5rem 0 1rem 2rem;
 }
 
 .footer {
   background-color: #353535;
   color: white;
-  padding: 20px;
+  padding: 2.7rem;
 }
 
-.footer .footer_title {
-  font-size: 1em;
+.footer_title {
+  font-size: 2rem;
   font-weight: 100;
   margin: 0;
   font-family: "shrikhand";
 }
 
-.footer .footer_liste {
+.footer_liste {
   padding: 0;
   list-style: none;
-  font-size: 0.7em;
-  line-height: 1.5em;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
 }
 
-.footer .footer_lien {
+.footer_lien {
   text-decoration: none;
   color: white;
 }
 
-.footer .footer_logo {
-  margin-right: 10px;
-  width: 14px;
+.footer_logo {
+  margin-right: 1rem;
+  width: 1.4rem;
 }
 /*# sourceMappingURL=index.css.map */
