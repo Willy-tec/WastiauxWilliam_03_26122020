@@ -95,7 +95,7 @@ a {
   letter-spacing: 0.1rem;
 }
 
-.Localisation {
+.localisation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +114,7 @@ a {
   font-weight: bold;
 }
 
-.Localisation .fas {
+.localisation .fas {
   color: #353535;
   margin-left: -2rem;
   margin-right: 2rem;
