@@ -27,8 +27,50 @@ body {
   width: 100%;
 }
 
-h1, p {
+h1, h2, h3 {
   margin: 0;
+  font-size: 2.4rem;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.jaime_anim--full {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 500ms  ease-in-out;
+  transition: -webkit-transform 500ms  ease-in-out;
+  transition: transform 500ms  ease-in-out;
+  transition: transform 500ms  ease-in-out, -webkit-transform 500ms  ease-in-out;
+  transition: transform 500ms  ease-in-out, -webkit-transform 500ms ease-in-out;
+  z-index: -1;
+}
+
+.jaime_anim--empty {
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: color 500ms ease;
+  transition: color 500ms ease;
+  z-index: 2;
+}
+
+.jaime_anim--empty:hover .jaime_anim--full {
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .header {
@@ -36,7 +78,6 @@ h1, p {
   display: -ms-flexbox;
   display: flex;
   font-family: "shrikhand", cursive;
-  font-size: 1.2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -47,6 +88,11 @@ h1, p {
   -webkit-box-shadow: 0rem 0rem .7rem .3rem black;
           box-shadow: 0rem 0rem .7rem .3rem black;
   height: 6.3rem;
+}
+
+.header_title {
+  font-size: 2.8rem;
+  letter-spacing: 0.1rem;
 }
 
 .Localisation {
@@ -114,14 +160,14 @@ h1, p {
   width: 70%;
   height: 5rem;
   border-radius: 2.5rem;
-  background: linear-gradient(356deg, #9356DC, #FF79DA);
+  background: linear-gradient(356deg, #9356dc, #ff79da);
   color: white;
   border: none;
   font-size: 1.6rem;
 }
 
 .fonctionnement {
-  padding: 2rem 2rem 4.4rem 2rem;
+  padding: 5rem 2rem 4.4rem 2rem;
   font-size: 2rem;
 }
 
@@ -157,7 +203,7 @@ h1, p {
   top: 2.4rem;
   left: -1.2rem;
   border-radius: 50%;
-  background-color: #9356DC;
+  background-color: #9356dc;
   width: 2.4rem;
   height: 2.4rem;
   display: -webkit-box;
@@ -179,7 +225,7 @@ h1, p {
   top: 2.6rem;
   left: 3.4rem;
   opacity: 1;
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .fonctionnement_list_item_texte {
@@ -190,8 +236,12 @@ h1, p {
   font-size: 1.6rem;
 }
 
+.fonctionnement_list_item:hover {
+  background: rgba(147, 86, 220, 0.15);
+}
+
 .restaurant {
-  padding: 2rem;
+  padding: 5rem 2rem 5rem 2rem;
   font-size: 2rem;
   background-color: #f6f6f6;
 }
@@ -204,8 +254,6 @@ h1, p {
 .restaurant_carte {
   width: 100%;
   position: relative;
-  text-decoration: none;
-  color: black;
   height: 25.2rem;
   display: block;
   margin: 0 0 1.8rem 0;
@@ -253,41 +301,6 @@ h1, p {
   position: absolute;
   bottom: 3.6rem;
   right: 2.2rem;
-}
-
-.restaurant_jaime:link {
-  pointer-events: none;
-}
-
-.restaurant_jaime--full {
-  position: absolute;
-  top: 3.6rem;
-  left: 2.2rem;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: -webkit-transform 150ms 50ms ease-in-out;
-  transition: -webkit-transform 150ms 50ms ease-in-out;
-  transition: transform 150ms 50ms ease-in-out;
-  transition: transform 150ms 50ms ease-in-out, -webkit-transform 150ms 50ms ease-in-out;
-  z-index: 1;
-}
-
-.restaurant_jaime:hover {
-  background: linear-gradient(220deg, #9356DC, #FF79DA);
-}
-
-.restaurant_jaime:hover--full {
-  background-color: #fff;
-  -webkit-transform: scale(3);
-          transform: scale(3);
-  mix-blend-mode: lighten;
-}
-
-.restaurant_jaime:hover--empty {
-  opacity: 1;
 }
 
 .restaurant_nom {

@@ -8,71 +8,99 @@
         <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/asset/css/normalize.css"/>
-        <link rel="stylesheet" href="/asset/index.css"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/asset/css/normalize.css"/>
+        <link rel="stylesheet" href="/asset/index.css"/>
+        <link rel="stylesheet" href="/asset/css/page_restaurant.css">
     </head>
 
     <body>
 
         <header class="header">
-              <h1>ohmyfood</h1>
+            <a href="/index.html"><i class="fas fa-2x fa-arrow-left header_previous"></i></a>
+              <h1 class="header_title">ohmyfood</h1>
         </header>
+
         <main>
-            <h1>Le délice des sens</h1>
-            <h2>Entrées</h2>
-            <div class="menu_carte">
-                <h3>Tartare de thon</h3>
-                <p>Assaisonné au yuzu</p>
-                <div class="menu_tarif">25€</div>
-            </div>
-            <div class="menu_carte">
-                <h3>Bouchée de homard croustillant</h3>
-                <p>Et sa farandole de petits légumes</p>
-                <div class="menu_tarif">35€</div>
-            </div>
-            <div class="menu_carte">
-                <h3>Velouté de cèpes</h3>
-                <p>Aux truffes</p>
-                <div class="menu_tarif">20€</div>
-            </div>
-
-
-            <h2>Plats</h2>
-            <div class="menu_carte">
-                <h3>Poulet rôti aux herbes de Provence</h3>
-                <p>Et sa crème de truffe</p>
-                <div class="menu_tarif">40€</div>
-            </div>
-            <div class="menu_carte">
-                <h3>Langouste rôtie</h3>
-                <p>Et ses légumes de saison</p>
-                <div class="menu_tarif">35€</div>
-            </div>
-            <div class="menu_carte">
-                <h3>Côte de boeuf Angus</h3>
-                <p>Et sa purée de panais</p>
-                <div class="menu_tarif">44€</div>
-            </div>
-
-            <h2>Desserts</h2>
-            <div class="menu_carte">
-                <h3>Farandole de desserts</h3>
-                <p>Du chef</p>
-                <div class="menu_tarif">18€</div>
-            </div>
-            <div class="menu_carte">
-                <h3>Crème brulée</h3>
-                <p>Revisitée</p>
-                <div class="menu_tarif">22€</div>
-            </div>
-            <div class="menu_carte">
-                <h3>Tiramisu</h3>
-                <p>À la noisette</p>
-                <div class="menu_tarif">23€</div>
-            </div>
-            <input type="button" value="Commander">
+            <img class="cover_image" src="/asset/images/restaurants/deliceDesSens.jpg" alt = "image de couverture illustrant le restaurant"/>
+            <section class="carte_cadre">
+                <div class="restaurant_title_box">
+                    <h1 class="restaurant_title">Le délice des sens</h1>
+                    <div class="jaime_anim">
+                        <i class="far fa-heart jaime_anim--empty" aria-hidden="true">
+                            <i class="fas fa-heart jaime_anim--full" aria-hidden="true"></i>
+                        </i>
+                    </div>
+                </div>
+                <h2 class="restaurant_carte_section">Entrées</h2>
+                <div class="menu_carte">
+                    <h3>Tartare de thon</h3>
+                    <div class="menu_description">
+                        <p>Assaisonné au yuzu</p>
+                        <div class="menu_tarif">25€</div>
+                    </div>
+                    </div>
+                <div class="menu_carte">
+                    <h3>Bouchée de homard croustillant</h3>
+                    <div class="menu_description">
+                        <p>Et sa farandole de petits légumes</p>
+                        <div class="menu_tarif">35€</div>
+                    </div>
+                    </div>
+                <div class="menu_carte">
+                    <h3>Velouté de cèpes</h3>
+                    <div class="menu_description">
+                        <p>Aux truffes</p>
+                        <div class="menu_tarif">20€</div>
+                    </div>
+                    </div>
+                <h2 class="restaurant_carte_section">Plats</h2>
+                <div class="menu_carte">
+                    <h3>Poulet rôti aux herbes de Provence</h3>
+                    <div class="menu_description">
+                        <p>Et sa crème de truffe</p>
+                        <div class="menu_tarif">40€</div>
+                    </div>
+                    </div>
+                <div class="menu_carte">
+                    <h3>Langouste rôtie</h3>
+                    <div class="menu_description">
+                        <p>Et ses légumes de saison</p>
+                        <div class="menu_tarif">35€</div>
+                    </div>
+                    </div>
+                <div class="menu_carte">
+                    <h3>Côte de boeuf Angus</h3>
+                    <div class="menu_description">
+                        <p>Et sa purée de panais</p>
+                        <div class="menu_tarif">44€</div>
+                    </div>
+                    </div>
+                <h2 class="restaurant_carte_section">Desserts</h2>
+                <div class="menu_carte">
+                    <h3>Farandole de desserts</h3>
+                    <div class="menu_description">
+                        <p>Du chef</p>
+                        <div class="menu_tarif">18€</div>
+                    </div>
+                    </div>
+                <div class="menu_carte">
+                    <h3>Crème brulée</h3>
+                    <div class="menu_description">
+                        <p>Revisitée</p>
+                        <div class="menu_tarif">22€</div>
+                    </div>
+                    </div>
+                <div class="menu_carte">
+                    <h3>Tiramisu</h3>
+                    <div class="menu_description">
+                        <p>À la noisette</p>
+                        <div class="menu_tarif">23€</div>
+                    </div>
+                    </div>
+                <input type="button"  class="bouton_commander" value="Commander">
+            </section>
         </main>
 
         <footer class="footer">
