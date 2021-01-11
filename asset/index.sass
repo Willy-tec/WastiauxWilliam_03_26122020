@@ -5,8 +5,8 @@ $couleur_font_nouveau: #008766
 $couleur_background_nouveau: #99e2d0
 $couleur_footer: #353535
 $logo_local: #353535
-$primary: #9356DC
-$secondary: #FF79DA
+$primary: #9356dc
+$secondary: #ff79da
 $tertiary: #99E2D0
 $font-title: 'shrikhand'
 $font-normal-text: 'Roboto'
@@ -28,19 +28,57 @@ body
     max-width: 60rem
     width: 100%
 
-h1, p
+h1,h2, h3
     margin: 0
+    font-size: 2.4rem
+p
+    margin: 0
+
+a        
+    text-decoration: none
+    color: black
+
+
+.jaime_anim
+    &--full
+        position: absolute
+        top: 0rem
+        left: 0rem
+        background: -o-linear-gradient(280deg, #FF79DA, #9356DC)
+        background: linear-gradient(170deg, #FF79DA, #9356DC)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        -webkit-transform: scale(0)
+        -ms-transform: scale(0)
+        transform: scale(0)
+        -webkit-transition: -webkit-transform 500ms  ease-in-out
+        transition: -webkit-transform 500ms  ease-in-out
+        -o-transition: transform 500ms  ease-in-out
+        transition: transform 500ms  ease-in-out
+        transition: transform 500ms  ease-in-out, -webkit-transform 500ms ease-in-out
+        z-index: -1
+    &--empty
+        font-size: 1.7rem
+        cursor: pointer
+        position: relative
+        transition: color 500ms ease
+        z-index: 2
+        &:hover .jaime_anim--full
+            cursor: pointer
+            transform: scale(1)
+    
 
 .header
     display: flex
     font-family: $font-title, cursive
-    font-size: 1.2rem
     justify-content: center
     align-items: center
     color: #000
     box-shadow: 0rem 0rem .7rem .3rem black
     height: 6.3rem
-//    letter-spacing: 0.1rem
+    &_title
+        font-size: 2.8rem
+        letter-spacing: 0.1rem
 
 
 .Localisation
@@ -90,7 +128,7 @@ h1, p
         font-size: 1.6rem
 
 .fonctionnement
-    padding: 2rem 2rem 4.4rem 2rem
+    padding: 5rem 2rem 4.4rem 2rem
     font-size: 2rem
     &_list
         width: auto
@@ -133,9 +171,11 @@ h1, p
                 font-weight: bold
                 opacity: 0.9
                 font-size: 1.6rem
+            &:hover
+                background:  rgba(147, 86, 220, .15)
 
 .restaurant
-    padding: 2rem
+    padding: 5rem 2rem 5rem 2rem
     font-size: 2rem
     background-color: $couleur_fond_clair
     &_list
@@ -144,8 +184,6 @@ h1, p
     &_carte
         width: 100%
         position: relative
-        text-decoration: none
-        color: black
         height: 25.2rem
         display: block
         margin: 0 0 1.8rem 0
@@ -177,34 +215,6 @@ h1, p
         position: absolute
         bottom: 3.6rem
         right: 2.2rem
-        
-        &:link
-            pointer-events: none
-        &--full
-            position: absolute
-            top: 3.6rem
-            left: 2.2rem
-            background: -o-linear-gradient(280deg, #FF79DA, #9356DC)
-            background: linear-gradient(170deg, #FF79DA, #9356DC)
-            -webkit-background-clip: text
-            -webkit-text-fill-color: transparent
-            -webkit-transform: scale(0)
-            -ms-transform: scale(0)
-            transform: scale(0)
-            -webkit-transition: -webkit-transform 150ms 50ms ease-in-out
-            transition: -webkit-transform 150ms 50ms ease-in-out
-            -o-transition: transform 150ms 50ms ease-in-out
-            transition: transform 150ms 50ms ease-in-out
-            transition: transform 150ms 50ms ease-in-out, -webkit-transform 150ms 50ms ease-in-out
-            z-index: 1
-        &:hover
-                background: linear-gradient(220deg, $primary, $secondary)
-                &--full
-                    background-color:  #fff
-                    transform: scale(3)
-                    mix-blend-mode: lighten
-                &--empty
-                    opacity: 1
     &_nom
         margin: 0
         padding: 1.8rem 0 0rem 2rem

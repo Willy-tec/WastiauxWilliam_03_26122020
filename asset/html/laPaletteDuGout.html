@@ -8,70 +8,108 @@
         <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/asset/css/normalize.css"/>
-        <link rel="stylesheet" href="/asset/index.css"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <!--
+      <link rel="stylesheet" href="asset/css/normalize.css"/>
+  -->      
+        <link rel="stylesheet" href="/asset/index.css"/>
+        <link rel="stylesheet" href="/asset/css/page_restaurant.css">
     </head>
 
     <body>
 
         <header class="header">
-              <h1>ohmyfood</h1>
+            <a href="/index.html"><i class="fas fa-2x fa-arrow-left header_previous"></i></a>
+              <h1 class="header_title">ohmyfood</h1>
         </header>
+
         <main>
-            <h1>La palette du goût</h1>
-            <h2>Entrées</h2>
-            <div class="menu_carte">
-                <h3>Fricassée d'escargot</h3>
-                <p>Au piment d'Espelette</p>
-                <div class="menu_tarif">25€</div>
-            </div>
-            <div class="menu_carte">
-                <h3>Foie gras de canard mi-cuit</h3>
-                <p>Et ses copeaux de truffe noire</p>
-                <div class="menu_tarif">35€</div>
-            </div>
-            <div class="menu_carte">
-                <h3>Oeuf au plat</h3>
-                <p>Assaisonné à la truffe sur lit de caviar</p>
-                <div class="menu_tarif">20€</div>
-            </div>
+            <img class="cover_image" src="/asset/images/restaurants/paleteDuGout.jpg" alt = "image de couverture illustrant le restaurant"/>
+            <section class="carte_cadre">
+                <div class="restaurant_title_box">
+                    <h1 class="restaurant_title">La palette du goût</h1>
+                    <div class="jaime_anim">
+                        <i class="far fa-heart jaime_anim--empty" aria-hidden="true">
+                            <i class="fas fa-heart jaime_anim--full" aria-hidden="true"></i>
+                        </i>
+                    </div>
+                </div>
+                <h2 class="restaurant_carte_section">Entrées</h2>
+                <div class="menu_carte">
+                    <h3>Fricassée d'escargot</h3>
+                    <div class="menu_description">
+                        <p>Au piment d'Espelette</p>
+                        <div class="menu_tarif">25€</div>
+                    </div>
+                </div>
+                <div class="menu_carte">
+                    <h3>Foie gras de canard mi-cuit</h3>
+                    <div class="menu_description">
+                        <p>Et ses copeaux de truffe noire</p>
+                    <div class="menu_tarif">35€</div>
+                    </div>
+                    
+                </div>
+                <div class="menu_carte">
+                    <h3>Oeuf au plat</h3>
+                    <div class="menu_description">
+                        <p>Assaisonné à la truffe sur lit de caviar</p>
+                        <div class="menu_tarif">20€</div>
 
-            <h2>Plats</h2>
-            <div class="menu_carte">
-                <h3>Filet de boeuf aux herbes</h3>
-                <p>Accompagné de sa ribambelle de légumes</p>
-                <div class="menu_tarif">40€</div>
-            </div>
-            <div class="menu_carte">
-                <h3>Parmentier de queue de boeuf</h3>
-                <p>À la truffe noire sur sa purée de panais</p>
-                <div class="menu_tarif">35€</div>
-            </div>
-            <div class="menu_carte">
-                <h3>Filet de turbot</h3>
-                <p>Aux agrumes</p>
-                <div class="menu_tarif">44€</div>
-            </div>
+                    </div>
+                </div>
 
-            <h2>Desserts</h2>
-            <div class="menu_carte">
-                <h3>Paris-Brest</h3>
-                <p>Revisité</p>
-                <div class="menu_tarif">18€</div>
-            </div>
-            <div class="menu_carte">
-                <h3>Macaron au chocolat d'exception</h3>
-                <p>Et glace à la vanille de Madagascar</p>
-                <div class="menu_tarif">22€</div>
-            </div>
-            <div class="menu_carte">
-                <h3>Mousse au chocolat</h3>
-                <p>Au piment d'Espelette et à la truffe noire</p>
-                <div class="menu_tarif">23€</div>
-            </div>
-            <input type="button" value="Commander">
+                <h2 class="restaurant_carte_section">Plats</h2>
+                <div class="menu_carte">
+                    <h3>Filet de boeuf aux herbes</h3>
+                    <div class="menu_description">
+                        <p>Accompagné de sa ribambelle de légumes</p>
+                        <div class="menu_tarif">40€</div>
+                    </div>
+                </div>
+                <div class="menu_carte">
+                    <h3>Parmentier de queue de boeuf</h3>
+                    <div class="menu_description">
+                        <p>À la truffe noire sur sa purée de panais</p>
+                        <div class="menu_tarif">35€</div>
+
+                    </div>
+                </div>
+                <div class="menu_carte">
+                    <h3>Filet de turbot</h3>
+                    <div class="menu_description">
+                        <p>Aux agrumes</p>
+                        <div class="menu_tarif">44€</div>
+
+                    </div>
+                </div>
+
+                <h2 class="restaurant_carte_section">Desserts</h2>
+                <div class="menu_carte">
+                    <h3>Paris-Brest</h3>
+                    <div class="menu_description">
+                        <p>Revisité</p>
+                        <div class="menu_tarif">18€</div>
+                    </div>
+                </div>
+                <div class="menu_carte">
+                    <h3>Macaron au chocolat d'exception</h3>
+                    <div class="menu_description">
+                        <p>Et glace à la vanille de Madagascar</p>
+                        <div class="menu_tarif">22€</div>
+                    </div>
+                </div>
+                <div class="menu_carte">
+                    <h3>Mousse au chocolat</h3>
+                    <div class="menu_description">
+                        <p>Au piment d'Espelette et à la truffe noire</p>
+                        <div class="menu_tarif">23€</div>
+                    </div>
+                </div>
+                <input type="button" class="bouton_commander" value="Commander">
+            </section>
+
         </main>
 
         <footer class="footer">
@@ -85,5 +123,4 @@
         </footer>
 
     </body>
-   <script  src="index.js"></script>
 </html>

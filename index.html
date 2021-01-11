@@ -8,7 +8,9 @@
         <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="asset/css/normalize.css"/>
+
+      <link rel="stylesheet" href="asset/css/normalize.css"/>
+
         <link rel="stylesheet" href="asset/index.css"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -17,7 +19,7 @@
     <body>
 
         <header class="header">
-              <h1>ohmyfood</h1>
+              <h1 class="header_title">ohmyfood</h1>
         </header>
         <main>
             <div class="localisation"><i class="fas fa-map-marker-alt"></i><div class="lieu">Paris, Belleville</div></div>
@@ -38,52 +40,74 @@
                 <h3 class="restaurant_title">Restaurant</h3>
                 <ul class="restaurant_list">
                     <li>
-                        <a href="/asset/html/laPaletteDuGout.html" class="restaurant_carte">
-                                <img class="restaurant_image" src="asset/images/restaurants/palleteDuGout.jpg" alt="Photo illustrant un plat">
+                        <div class="restaurant_carte">
+                            <a href="/asset/html/laPaletteDuGout.html">
+                                <img class="restaurant_image" src="asset/images/restaurants/paleteDuGout.jpg" alt="Photo illustrant un plat">
                                 <div class="isNouveau">
                                     Nouveau
                                 </div>
                                 <h4 class="restaurant_nom">La palette du goût</h4>
                                 <p class="restaurant_description">Ménilmontant</p>
-                                <div class="restaurant_jaime">
-                                    <i class="far fa-heart restaurant_jaime--empty" aria-hidden="true">
-                                        <i class="fas fa-heart restaurant_jaime--full" aria-hidden="true"></i>
-                                    </i>
-                                </div>
-                        </a>
+                            </a>
+                            <div class="restaurant_jaime">
+                                <i class="far fa-heart jaime_anim--empty" aria-hidden="true">
+                                    <i class="fas fa-heart jaime_anim--full" aria-hidden="true"></i>
+                                </i>
+                            </div>
+                        </div>
+
                     </li>
                     <li>
-                        <a href="/asset/html/lanoteEnchante.html" class="restaurant_carte">
+                        <div class="restaurant_carte">
+                            <a href="/asset/html/lanoteEnchante.html">
                                 <img class="restaurant_image" src="asset/images/restaurants/noteEnchanté.jpg" alt="Photo illustrant un plat">
                                 <div class="isNouveau">
                                     Nouveau
                                 </div>
                                 <h4 class="restaurant_nom">La note enchantée</h4>
                                 <p class="restaurant_description">Charonne</p>
-                                <i class="restaurant_jaime far fa-heart"></i>
-                        </a>
+                            </a>
+                            <div class="restaurant_jaime">
+                                <i class="far fa-heart jaime_anim--empty" aria-hidden="true">
+                                    <i class="fas fa-heart jaime_anim--full" aria-hidden="true"></i>
+                                </i>
+                            </div>
+                        </div>
+
                     </li>
                     <li>
-                        <a href="/asset/html/alafrancaise.html" class="restaurant_carte">
-                                <img class="restaurant_image" src="asset/images/restaurants/laFrancaise.jpg" alt="Photo illustrant un plat">
-                                <div class="notNouveau">
-                                    Nouveau
-                                </div>
-                                <h4 class="restaurant_nom">A la française</h4>
-                                <p class="restaurant_description">Cité Rouge</p>
-                                <i class="restaurant_jaime far fa-heart"></i>
-                        </a>
+                        <div class="restaurant_carte">
+                            <a href="/asset/html/alafrancaise.html">
+                                    <img class="restaurant_image" src="asset/images/restaurants/laFrancaise.jpg" alt="Photo illustrant un plat">
+                                    <div class="notNouveau">
+                                        Nouveau
+                                    </div>
+                                    <h4 class="restaurant_nom">A la française</h4>
+                                    <p class="restaurant_description">Cité Rouge</p>
+                            </a>
+                            <div class="restaurant_jaime">
+                                <i class="far fa-heart jaime_anim--empty" aria-hidden="true">
+                                    <i class="fas fa-heart jaime_anim--full" aria-hidden="true"></i>
+                                </i>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <a href="/asset/html/leDeliceDesSens.html" class="restaurant_carte">
-                                <img class="restaurant_image" src="asset/images/restaurants/deliceDesSens.jpg" alt="Photo illustrant un plat">
-                                <div class="notNouveau">
-                                    Nouveau
-                                </div>
-                                <h4 class="restaurant_nom">Le délice des sens</h4>
-                                <p class="restaurant_description">Folie-Méricourt</p>
-                                <i class="restaurant_jaime far fa-heart"></i>
-                        </a>
+                        <div class="restaurant_carte">
+                            <a href="/asset/html/leDeliceDesSens.html">
+                                    <img class="restaurant_image" src="asset/images/restaurants/deliceDesSens.jpg" alt="Photo illustrant un plat">
+                                    <div class="notNouveau">
+                                        Nouveau
+                                    </div>
+                                    <h4 class="restaurant_nom">Le délice des sens</h4>
+                                    <p class="restaurant_description">Folie-Méricourt</p>
+                            </a>
+                            <div class="restaurant_jaime">
+                                <i class="far fa-heart jaime_anim--empty" aria-hidden="true">
+                                    <i class="fas fa-heart jaime_anim--full" aria-hidden="true"></i>
+                                </i>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -100,5 +124,5 @@
         </footer>
 
     </body>
-   <script  src="index.js"></script>
+
 </html>
