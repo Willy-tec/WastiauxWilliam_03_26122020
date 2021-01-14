@@ -22,6 +22,7 @@ main
     margin: 0
     padding: 0
     box-sizing: border-box
+    margin-bottom: -4rem
 
 a
     text-decoration: none
@@ -77,34 +78,80 @@ a
         top: .9rem
         left: 0
 
-
-.menu_carte
-    position: relative
+.menu_cadre
+    opacity: 0
     border-radius: 1.4rem
     background-color: white
-    line-height: 2.5rem
-    margin: 1rem 0 1rem 0
-    padding: 1.2rem
     box-shadow: 0rem 0rem 1rem 0 #ddd
-    h3
-        font-size: 1.9rem
-        font-weight: 900
-        white-space: nowrap
-        overflow: hidden
-        text-overflow: ellipsis
-    p
-        font-size: 1.5rem
-        width: auto
-        white-space: nowrap
-        overflow: hidden
-        text-overflow: ellipsis
-    .menu_description
+    display: flex
+    flex-direction: row
+    overflow: hidden
+    margin: 1rem 0 1rem 0
+    cursor: pointer
+    &:hover .checkbox
+        width: 10rem
+        transition:  margin 500ms ease-in
         display: flex
-        flex-direction: row
-        justify-content: space-between
-    .menu_tarif
-        font-size: 1.4rem
-        font-weight: bold
+        justify-content: center
+        align-items: center
+        margin-right: 0px
+    &:hover .fa-check-circle::before
+        display: inline-block
+        transform: rotate(360deg)
+        transition: transform 200ms linear 300ms
+        margin-right: 0px
+    .checkbox
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: $tertiary
+        width: 10rem
+        margin-right: -10rem
+        transition: margin 300ms ease-out
+        .fa-check-circle
+            color: white
+    .menu_carte
+        padding: 1.2rem
+        position: relative
+        line-height: 2.5rem
+        flex: 1 1 100%
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        h3
+            font-size: 1.9rem
+            font-weight: 900
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+        p
+            font-size: 1.5rem
+            width: auto
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+        .menu_description
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+        .menu_tarif
+            font-size: 1.4rem
+            font-weight: bold
+
+@keyframes fade
+    0%
+        transform: translateY(50px)
+        opacity: 0
+    100%
+        transform: translateY(0)
+        opacity: 1
+
+@for $i from 3 to 15
+    .menu_cadre:nth-child(#{$i})
+        animation: fade 800ms
+        animation-delay: $i*.1s
+        animation-fill-mode: forwards
+
 
 .bouton_commander
     width: 70%
@@ -115,6 +162,11 @@ a
     border: none
     margin: 4rem auto 4rem auto
     font-size: 1.6rem
+    box-shadow: 0rem 0.3rem .5rem 0rem #aaa
+    &:hover
+        cursor: pointer
+        filter: brightness(1.1);
+        box-shadow: 0rem 0.3rem .5rem 0rem #777
+    &:active, &:focus
+        outline-style: none
 
-main
-    margin-bottom: -4rem
