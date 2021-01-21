@@ -78,39 +78,40 @@ a
         top: .9rem
         left: 0
 
-.menu_cadre
-    opacity: 0
-    border-radius: 1.4rem
-    background-color: white
-    box-shadow: 0rem 0rem 1rem 0 #ddd
-    display: flex
-    flex-direction: row
-    overflow: hidden
-    margin: 1rem 0 1rem 0
-    cursor: pointer
-    &:hover .checkbox
-        width: 10rem
-        transition:  margin 500ms ease-in
+.menu
+    &_cadre
+        opacity: 0
+        border-radius: 1.4rem
+        background-color: white
+        box-shadow: 0rem 0rem 1rem 0 #ddd
         display: flex
-        justify-content: center
-        align-items: center
-        margin-right: 0px
-    &:hover .fa-check-circle::before
-        display: inline-block
-        transform: rotate(360deg)
-        transition: transform 200ms linear 300ms
-        margin-right: 0px
-    .checkbox
-        display: flex
-        justify-content: center
-        align-items: center
-        background-color: $tertiary
-        width: 10rem
-        margin-right: -10rem
-        transition: margin 300ms ease-out
-        .fa-check-circle
-            color: white
-    .menu_carte
+        flex-direction: row
+        overflow: hidden
+        margin: 1rem 0 1rem 0
+        cursor: pointer
+        &:hover .checkbox
+            width: 10rem
+            transition:  margin 500ms ease-in
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-right: 0px
+        &:hover .fa-check-circle::before
+            display: inline-block
+            transform: rotate(360deg)
+            transition: transform 200ms linear 300ms
+            margin-right: 0px
+        .checkbox
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: $tertiary
+            width: 10rem
+            margin-right: -10rem
+            transition: margin 300ms ease-out
+            .fa-check-circle
+                color: white
+    &_carte
         padding: 1.2rem
         position: relative
         line-height: 2.5rem
@@ -130,13 +131,14 @@ a
             white-space: nowrap
             overflow: hidden
             text-overflow: ellipsis
-        .menu_description
-            display: flex
-            flex-direction: row
-            justify-content: space-between
-        .menu_tarif
-            font-size: 1.4rem
-            font-weight: bold
+    &_description
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &_tarif
+        font-size: 1.4rem
+        font-weight: bold
+        padding-left: 5px
 
 @keyframes fade
     0%
@@ -170,3 +172,20 @@ a
     &:active, &:focus
         outline-style: none
 
+
+@media screen and ( min-width: 800px )
+    .header
+        opacity: 1
+        background-color: white
+        box-shadow: 0 0 10rem black
+    .carte
+        &_cadre
+            max-width: 800px
+            margin: auto
+            margin-top: 10rem
+    .cover_image
+        position: fixed
+        top: 0
+        height: auto
+        z-index: -1
+        opacity: .8
