@@ -444,7 +444,6 @@ a {
   .fonctionnement_list_item {
     max-width: 500px;
     min-width: 10px;
-    display: row !important;
     margin: 1rem;
     -webkit-box-flex: 2;
         -ms-flex: 2 2 300px;
@@ -463,9 +462,6 @@ a {
   }
   .restaurant_carte {
     max-width: 670px;
-    -webkit-columns: 1;
-            columns: 1;
-    row: 1;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: center;
